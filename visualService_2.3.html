@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NH 빅데이터 포털</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/jquery/jquery-ui.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="lib/rMateChartH5/Assets/Css/rMateChartH5.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/visualization.css">
+     <!-- JS -->
+    <script src="lib/jquery/jquery.min.js"></script>   
+    <script src="lib/jquery/jquery-migrate.min.js"></script>   
+    <script src="lib/jquery/jquery-ui.js"></script>   
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>   
+    <script src="lib/LicenseKey/rMateChartH5License.js"></script>
+    <script src="lib/rMateChartH5/JS/rMateChartH5.js"></script>
+    <script src="js/includeHTML.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/visualization.js"></script>
+</head>
+<body>
+   	<!-- skipToContent -->
+    <div id="skipToContent">
+        <a href="#goContent">본문 바로가기</a>
+    </div><!-- // skipToContent -->
+    
+    <div class="wrap">
+        <header class="header-wrap header-border-color">  
+		   <div class="navbar" include-html="">
+		   		<div class="header inner">
+					<h1><a href="/"><img src="img/logo.png" alt=""></a></h1>
+
+					<!--gnb-->
+					<nav class="gnb-wrap">
+						<ul class="gnb">
+							<li class="disable">
+								<a href="javascript:;">데이터서비스</a>
+							</li>
+							<li class="disable">
+								<a href="javascript:;">서비스신청</a>
+							</li>
+							<li class="disable">
+								<a href="javascript:;">분석서비스</a>
+							</li>
+							<li>
+								<a href="javascript:;">시각화서비스</a>
+								<div class="gnb-dep2">
+									<ul>
+										<li><a href="./visualService_1.1.html">메뉴1</a></li>
+										<li><a href="./visualService_2.1.html">메뉴2</a></li>
+									</ul>
+								</div><!--// gnb-dep2 -->
+							</li>
+							<li class="disable">
+								<a href="javascript:;">커뮤니티</a>
+							</li>
+						</ul>
+					</nav>
+					<!--// gnb-->
+					<div class="header-right">
+						<a href="#" class="login-btn" title="로그인"><span class="hidden">로그인</span></a>
+						<div class="sitemap">
+							<button type="button" class="sitemap-open"></button>
+							<div class="sitemap-list">
+								<div class="inner">
+									<dl>
+										<dt>데이터서비스</dt>
+										<dd>
+											<ul>
+												<li>
+													<a href="#">메뉴1</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴1-1</a></li>
+														<li><a href="#">메뉴1-2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴2</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴2-1</a></li>
+														<li><a href="#">메뉴2-2</a></li>
+														<li><a href="#">메뉴2-3</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴3</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴3-1</a></li>
+														<li><a href="#">메뉴3-2</a></li>
+														<li><a href="#">메뉴3-3</a></li>
+														<li><a href="#">메뉴3-4</a></li>
+													</ul>
+												</li>
+											</ul>
+										</dd>
+										
+									</dl>
+									<dl>
+										<dt>신청서비스</dt>
+										<dd>
+											<ul>
+												<li><a href="#">메뉴1</a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>분석서비스</dt>
+										<dd>
+											<ul>
+												<li>
+													<a href="#">메뉴1</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴1-1</a></li>
+														<li><a href="#">메뉴1-2</a></li>
+														<li><a href="#">메뉴1-3</a></li>
+														<li><a href="#">메뉴1-4</a></li>
+														<li><a href="#">메뉴1-5</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴2</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴2-1</a></li>
+														<li><a href="#">메뉴2-2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴3</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴3-1</a></li>
+														<li><a href="#">메뉴3-2</a></li>
+													</ul>
+												</li>
+											</ul>
+										</dd>
+										
+									</dl>
+									<dl>
+										<dt>시각화서비스</dt>
+										<dd>
+											<ul>
+												<li>
+													<a href="#">메뉴1</a>
+													<ul class="depth2">
+														<li><a href="./visualService_1.1.html">메뉴1-1</a></li>
+														<li><a href="./visualService_1.2.html">메뉴1-2</a></li>
+														<li><a href="./visualService_1.3.html">메뉴1-3</a></li>
+														<li><a href="./visualService_1.4.html">메뉴1-4</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴2</a>
+													<ul class="depth2">
+														<li><a href="./visualService_2.1.html">메뉴2-1</a></li>
+														<li><a href="./visualService_2.2.html">메뉴2-2</a></li>
+														<li><a href="./visualService_2.3.html">메뉴2-3</a></li>
+														<li><a href="./visualService_2.4.html">메뉴2-4</a></li>
+													</ul>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>커뮤니티</dt>
+										<dd>
+											<ul>
+												<li><a href="#">메뉴1</a></li>
+												<li><a href="#">메뉴2</a></li>
+												<li><a href="#">메뉴3</a></li>
+												<li><a href="#">메뉴4</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<button type="button" class="sitemap-close"></button>
+							</div>
+						</div><!--sitemap-->
+
+					</div><!--//header-right-->
+				</div><!--//header-->
+				<div class="gnb-bg"></div>
+		   </div><!--//navbar-->
+	    </header><!--//header-->
+                
+        <div class="container">
+        	<div id="goContent" class="hidden"><h1>메인콘텐츠</h1></div>
+        	<div class="sub-content">
+        		<div class="inner">
+					<div class="sidebar">
+						<div class="sidebar-title">
+							<h2>시각화서비스</h2>
+							<small class="bg-color1">Visualize Service</small>
+						</div>
+						<div class="sidebar-nav">
+							<ul>
+								<li>
+									<a href="javascript:;">메뉴1</a>
+									<ul class="depth2">
+										<li><a href="./visualService_1.1.html">메뉴1-1</a></li>
+										<li><a href="./visualService_1.2.html">메뉴1-2</a></li>
+										<li><a href="./visualService_1.3.html">메뉴1-3</a></li>
+										<li><a href="./visualService_1.4.html">메뉴1-4</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;">메뉴2</a>
+									<ul class="depth2">
+										<li><a href="./visualService_2.1.html">메뉴2-1</a></li>
+										<li><a href="./visualService_2.2.html">메뉴2-2</a></li>
+										<li><a href="./visualService_2.3.html">메뉴2-3</a></li>
+										<li><a href="./visualService_2.4.html">메뉴2-4</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!--// sidebar-->
+
+					<div class="page-content visualization"><!-- 시각화 서비스 : visualization class 추가 -->
+						<div class="page-title">
+							<h3>메뉴2-3</h3>
+						</div><!-- page-title-->
+						<div class="page-visual">
+							<img src="img/sub-visual-img1.jpg" alt="">
+						</div><!--//page-visual-->
+
+						<div class="board-write">
+							<!-- search -->
+							<div class="area-search">
+								<div class="tbl-search">
+									<table summary="조회 선택">
+										<colgroup>
+											<col style="width:6%;">
+											<col style="width:52%;">
+											<col style="width:8%;">
+											<col style="width:34%;">
+											<col style="width:140px;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>선택</th>
+												<td>
+													<div class="frm-select w32">
+														<select title="선택">
+															<option>option1</option>
+															<option selected="selected">option2</option>
+														</select>
+													</div>
+													<div class="frm-select w32">
+														<select title="선택">
+															<option>option1</option>
+															<option>option2</option>
+															<option selected="selected">option3</option>
+														</select>
+													</div>
+													<div class="frm-select w32">
+														<select title="선택">
+															<option>option1</option>
+															<option>option2</option>
+															<option>option3</option>
+															<option selected="selected">option4</option>
+														</select>
+													</div>
+												</td>
+												<th>기간</th>
+												<td>
+													<div class="frm-date" id="datePick">
+														<div class="date-box w44">
+															<input type="text" name="" id="startDate" title="시작년월 선택">
+														</div>
+														<div class="bar">~</div>
+														<div class="date-box w44">
+															<input type="text" name="" id="endDate" title="종료년월 선택">
+														</div>
+													</div>
+												</td>
+												<td><button type="button" class="btn-search"><span>조회하기</span></button></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- //search -->
+							<!-- search result -->
+							<div class="area-result">
+								<div class="grp-row">
+									<!-- title1 -->
+									<h4>title1</h4>
+									<div class="row">
+										<div class="graph-wrap">
+											<div class="ranking-area">
+												<ul class="top-list">
+													<li>
+														<div class="box">
+															<span>1위</span>
+															<a href="#" class="apple" data-cont="top1">사과</a>
+														</div>
+													</li>
+													<li>
+														<div class="box">
+															<span>2위</span>
+															<a href="#" class="grape" data-cont="top2">포도</a>
+														</div>
+													</li>
+													<li>
+														<div class="box">
+															<span>3위</span>
+															<a href="#" class="carrot" data-cont="top3">당근</a>
+														</div>
+													</li>
+												</ul>
+												<div class="desc">
+													<div id="top1" class="cont" style="display:block;">
+														<div class="box">
+															<p class="tit best">사과</p>
+															<ul class="cont-list">
+																<li>사과는 연평균 기온이 8~11C, 생육기 평균 기온이 15~18C의 비교적 서늘한 기후에서 재배되는 북부 온대과수이다.</li>
+															</ul>
+														</div>
+														<div class="box">
+															<p class="tit">사과의 재배 설명</p>
+															<ul class="cont-list">
+																<li>휴면기간 중에는 7C이하의 적산 기간이 1200~1500시간 정도 경과되어야 자발 휴면이 타파되어 발아, 전엽, 개화 등의 생육이 정상적으로 이루어진다. 겨울철 최저극온은 -30도가 재배한계온도이지만 발아기 전후의 생육초기에는 쉽게 저온 피해를 받는다.</li>
+															</ul>
+														</div>
+													</div>
+													<div id="top2" class="cont">
+														<div class="box">
+															<p class="tit">포도</p>
+															<ul class="cont-list">
+																<li>포도는 연평균 기온이 8~11C, 생육기 평균 기온이 15~18C의 비교적 서늘한 기후에서 재배되는 북부 온대과수이다.</li>
+															</ul>
+														</div>
+														<div class="box">
+															<p class="tit">포도의 재배 설명</p>
+															<ul class="cont-list">
+																<li>휴면기간 중에는 7C이하의 적산 기간이 1200~1500시간 정도 경과되어야 자발 휴면이 타파되어 발아, 전엽, 개화 등의 생육이 정상적으로 이루어진다. 겨울철 최저극온은 -30도가 재배한계온도이지만 발아기 전후의 생육초기에는 쉽게 저온 피해를 받는다.</li>
+															</ul>
+														</div>
+													</div>
+													<div id="top3" class="cont">
+														<div class="box">
+															<p class="tit">당근</p>
+															<ul class="cont-list">
+																<li>당근은 연평균 기온이 8~11C, 생육기 평균 기온이 15~18C의 비교적 서늘한 기후에서 재배되는 북부 온대과수이다.</li>
+															</ul>
+														</div>
+														<div class="box">
+															<p class="tit">당근의 재배 설명</p>
+															<ul class="cont-list">
+																<li>휴면기간 중에는 7C이하의 적산 기간이 1200~1500시간 정도 경과되어야 자발 휴면이 타파되어 발아, 전엽, 개화 등의 생육이 정상적으로 이루어진다. 겨울철 최저극온은 -30도가 재배한계온도이지만 발아기 전후의 생육초기에는 쉽게 저온 피해를 받는다.</li>
+																<li>휴면기간 중에는 7C이하의 적산 기간이 1200~1500시간 정도 경과되어야 자발 휴면이 타파되어 발아, 전엽, 개화 등의 생육이 정상적으로 이루어진다. 겨울철 최저극온은 -30도가 재배한계온도이지만 발아기 전후의 생육초기에는 쉽게 저온 피해를 받는다.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //title1 -->
+									<!-- title2 -->
+									<h4>title2</h4>
+									<div class="row">
+										<div class="graph-wrap">
+											<div class="map-box">
+												<!-- 맵 영역 -->
+												<p>맵핑 영역</p>
+											</div>
+										</div>
+									</div>
+									<!-- //title2 -->
+									<!-- title3 -->
+									<div class="row">
+										<h4>title3</h4>
+										<div class="graph-wrap">
+											<div class="area-graph">
+												<div id="chartHolder1" class="chart-control" style="width:100%; height:295px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title3 -->
+									<!-- title4 -->
+									<div class="row w50">
+										<h4>title4</h4>
+										<div class="graph-wrap">
+											<div class="area-graph">
+												<div id="chartHolder2" class="chart-control" style="width:100%; height:350px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title4 -->
+									<!-- title5 -->
+									<div class="row w50">
+										<h4>title5</h4>
+										<div class="graph-wrap">
+											<div class="area-graph">
+												<div id="chartHolder3" class="chart-control" style="width:100%; height:350px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title5 -->
+									<h4>title6</h4>
+									<!-- title6-1 -->
+									<div class="row w33">
+										<div class="graph-wrap">
+											<div class="tit">
+												<h5>title6-1</h5>
+											</div>
+											<div class="area-graph">
+												<div id="chartHolder4" class="chart-control" style="width:100%; height:300px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title6-1 -->
+									<!-- title6-2 -->
+									<div class="row w33">
+										<div class="graph-wrap">
+											<div class="tit">
+												<h5>title6-2</h5>
+											</div>
+											<div class="area-graph">
+												<div id="chartHolder5" class="chart-control" style="width:100%; height:300px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title6-2 -->
+									<!-- title6-3 -->
+									<div class="row w33">
+										<div class="graph-wrap">
+											<div class="tit">
+												<h5>title6-3</h5>
+											</div>
+											<div class="area-graph">
+												<div id="chartHolder6" class="chart-control" style="width:100%; height:300px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title6-3 -->
+								</div>
+							</div>
+							<!-- //search result -->
+						</div>
+						<!--// board-write -->
+					</div><!--// page-content -->
+				</div><!--// inner -->
+			</div><!--// sub-content -->
+        </div><!--// container -->        
+        
+        <footer class="footer-wrap">     
+			<div class="inner">
+				<div class="footer-txt">
+					<div class="info">
+						<span>서울시 중구 새문안로 16</span>
+						<span>대표자 : 000</span>
+						<span>사업자등록번호 : 000-00-00000 </span>
+						<span>전화번호 안내 : 00-0000-0000 </span><br>
+						<span>금융문의  농협은행 : 0000-3000, 0000-0000</span>
+						<span>농 . 축협 : 0000-0000, 0000-0000</span>
+					</div>
+					<cite>Copyright ⓒ staryacht  All Right Reserved.</cite>
+				</div>
+			</div>
+            <button type="button" class="btn-gotop" title="상단으로 이동">TOP</button>
+        </footer><!--//footer-wrap-->
+    </div><!--//wrap-->	
+    </div>
+    <script>
+    	$(document).ready(function(){
+			//datepicker
+			function date(){
+				$.datepicker.setDefaults({
+					 dateFormat: 'yy.mm'
+				    ,changeMonth: true
+				    ,changeYear: true
+				    ,showButtonPanel: true
+				    ,buttonImageOnly: true
+			        ,buttonImage: "img/visualization/img_calendar.png"
+			        ,buttonText: "조회 월을 선택해 주세요."
+			        ,showOn: "both"
+			        ,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] 
+			        ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월']
+			        ,dayNamesMin: ['일','월','화','수','목','금','토']
+			        ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
+				    ,onClose: function (dateText, inst) {
+				        var month = inst.dpDiv.find('.ui-datepicker-month').find(':selected').val(),
+				            year = inst.dpDiv.find('.ui-datepicker-year').find(':selected').val();
+
+				        $(this).datepicker('setDate', new Date(year, month, 1));
+				        //$(this).focusout();
+				    }
+				});
+
+				$("#startDate, #endDate").datepicker().focus(function(){
+					$('.ui-datepicker').addClass('month');
+				});
+			}
+
+			//추천 작물 순위
+		    $('.ranking-area .top-list a').on('click', function(e){
+		        e.preventDefault();        
+		        var activeCont = $(this).attr('data-cont');
+
+		        $('.ranking-area .desc .cont').hide();
+		        $('#' + activeCont).show();
+		    });
+
+			date();
+	        
+        });
+
+        /********* chart1 *********/
+        rMateChartH5.create("chart1", "chartHolder1", "", "100%", "100%");
+
+        var layoutStr1 =
+            '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+               	+'<Options>'
+                    +'<Caption text=""/>'
+                    +'<SubCaption text="" textAlign="center" />'
+                    +'<Legend useVisibleCheck="true"/>'
+                +'</Options>'
+                +'<NumberFormatter id="numFmt1" useThousandsSeparator="true"/>'
+                +'<CurrencyFormatter id="numFmt2" precision="0" currencySymbol="%" alignSymbol="right"/>'
+                +'<Combination2DChart showDataTips="true" dataTipJsFunction="dataTipJsFunc">'
+                	/*
+                    	Combination2D 차트 생성시에 필요한 Combination2DChart 정의합니다
+                    	showDataTips : 데이터에 마우스를 가져갔을 때 나오는 Tip을 보이기/안보이기 속성입니다
+                	*/
+                	+'<horizontalAxis>'
+                    	+'<CategoryAxis categoryField="Month" padding="0.5"/>'
+                	+'</horizontalAxis>'
+                	+'<verticalAxis>'
+                    	+'<LinearAxis id="vAxis1" formatter="{numFmt1}"/>'
+                	+'</verticalAxis>'
+                	+'<series>'
+                        +'<Column2DSeries labelPosition="outside" yField="prec" displayName="강수량" showValueLabels="[5]">'
+                        	//bar color
+                        	+'<fill>'
+                            	+'<SolidColor color="#009688"/>'
+                        	+'</fill>'
+                        	+'<showDataEffect>'
+                            	+'<SeriesInterpolate/>'
+                        	+'</showDataEffect>'
+                       	+'</Column2DSeries>'
+                        +'<Line2DSeries radius="6" yField="temper" displayName="기온" itemRenderer="CircleItemRenderer">'
+                            +'<verticalAxis>'
+                                +'<LinearAxis id="vAxis2" formatter="{numFmt2}"/>'
+                            +'</verticalAxis>'
+                            +'<showDataEffect>'
+                                +'<SeriesInterpolate/>'
+                            +'</showDataEffect>'
+                            +'<lineStroke>'
+                            	//stroke color
+                                +'<Stroke color="#f8aa27" weight="4"/>'
+                            +'</lineStroke>'
+                            +'<stroke>'
+                            	//ball color
+                                +'<Stroke color="#f8aa27" weight="3"/>'
+                            +'</stroke>'
+                        +'</Line2DSeries>'
+                    +'</series>'
+                   	+'<verticalAxisRenderers>'
+                        +'<Axis2DRenderer axis="{vAxis1}" showLine="false"/>'
+                        +'<Axis2DRenderer axis="{vAxis2}" showLine="false"/>'
+                    +'</verticalAxisRenderers>'
+                +'</Combination2DChart>'
+            +'</rMateChart>';
+
+        // 차트 데이터
+		var chartData1 =
+		[{"Month":"1월","prec":200,"temper":61},
+		{"Month":"2월","prec":300,"temper":35},
+		{"Month":"3월","prec":420,"temper":30},
+		{"Month":"4월","prec":550,"temper":32},
+		{"Month":"5월","prec":620,"temper":29},
+		{"Month":"6월","prec":720,"temper":22},
+		{"Month":"7월","prec":880,"temper":20},
+		{"Month":"8월","prec":990,"temper":25},
+		{"Month":"9월","prec":1000,"temper":19},
+		{"Month":"10월","prec":1100,"temper":18},
+		{"Month":"11월","prec":1220,"temper":16},
+		{"Month":"12월","prec":1440,"temper":15}];
+
+		rMateChartH5.calls("chart1", {
+		    "setLayout" : layoutStr1,
+		    "setData" : chartData1
+		});
+
+		function dataTipJsFunc (seriesId, seriesName, index, xName, yName, data, values) {
+		  if (seriesName == "기온")
+		        return data['Month'] + "기온 : " + "<b>" + data['temper'] + "℃</b>";
+		  else
+		        return data['Month'] + "강수량 : " + "<b>" + data['prec'] + "mm</b>";
+		}
+
+        /********* chart2 *********/
+        rMateChartH5.create("chart2", "chartHolder2", "", "100%", "100%");
+
+		var layoutStr2 =
+            '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                +'<Options>'
+                    +'<Caption text="" />'
+                    +'<SubCaption text="" textAlign="center" />'
+                +'</Options>'
+                +'<SeriesInterpolate id="ss"/>'
+                +'<Column2DChart showDataTips="true" selectionMode="multiple" columnWidthRatio="0.48">'
+                    +'<horizontalAxis>'
+                        +'<CategoryAxis categoryField="Country"/>'
+                    +'</horizontalAxis>'
+                    +'<verticalAxis>'
+                        +'<LinearAxis maximum="100" interval="10"/>'
+                    +'</verticalAxis>'
+                    +'<series>'
+                        +'<Column2DSeries labelPosition="outside" yField="GDP" displayName="GDP Growth (In %)" showDataEffect="{ss}" showValueLabels="[4]" strokeJsFunction="strokeFunction">'
+                        	+'<fills>'
+								//bar color
+			                    +'<SolidColor color="#f8aa27"/>'
+			                    +'<SolidColor color="#00695c"/>'
+			                    +'<SolidColor color="#06373a"/>'
+			                    +'<SolidColor color="#009688"/>'
+			                    +'<SolidColor color="#82cb92"/>'
+			                +'</fills>'
+                        +'</Column2DSeries>'
+                    +'</series>'
+                +'</Column2DChart>'
+            +'</rMateChart>';
+		
+		var chartData2 =
+			[{"Country":"option1", "GDP":20},
+             {"Country":"option2", "GDP":30},
+		     {"Country":"option3", "GDP":51.2},
+		     {"Country":"option4", "GDP":44.5},
+		     {"Country":"option5", "GDP":62.35}
+		    ];
+
+		rMateChartH5.calls("chart2", {
+		  "setLayout" : layoutStr2,
+		    "setData" : chartData2
+		});
+
+        /********* chart3 *********/
+        rMateChartH5.create("chart3", "chartHolder3", "", "100%", "100%");
+        var layoutStr3 =
+            '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                +'<Options>'
+                	+'<Caption text=""/>'
+                    +'<SubCaption text=""/>'
+                    +'<Legend useVisibleCheck="true"/>'
+                +'</Options>'
+                +'<CurrencyFormatter id="numFmt" currencySymbol="%" alignSymbol="right"/>'
+                +'<Pie3DChart showDataTips="true"  depth="70" paddingLeft="40" paddingTop="40" paddingRight="40" paddingBottom="40">'
+                   	+'<series>'
+                        +'<Pie3DSeries nameField="browser" field="share" labelPosition="inside" color="#ffffff" startAngle="240">'
+                        /* Pie3DChart 정의 후 Pie3DSeries labelPosition="inside"정의합니다 */
+                        	//pie color
+                            +'<fills>'
+                                +'<SolidColor color="#f8aa27"/>'
+                                +'<SolidColor color="#06373a"/>'
+                                +'<SolidColor color="#00695c"/>'
+                                +'<SolidColor color="#009688"/>'
+                                +'<SolidColor color="#82cb92"/>' 
+                            +'</fills>'
+                            +'<showDataEffect>'
+                            /* 차트 생성시에 Effect를 주고 싶을 때 shoDataEffect정의합니다 */
+                                +'<SeriesInterpolate duration="1000"/>'
+                                   /*
+                                  SeriesInterpolate 효과는 시리즈 데이터가 데이터로 표시될 때 데이터의 변화된 내용을 가지고 효과를 적용합니다
+                                    - 공통 -
+                                  elementOffset : effect를 지연시키는 시간을 지정합니다 default:20
+                                  minimumElementDuration : 각 엘리먼트의 최소 지속 시간을 설정합니다 default:0 
+                                  이 값보다 짧은 시간에 effect가 실행되지 않습니다
+                                 offset : effect개시의 지연시간을 설정합니다 default:0
+                                    perElementOffset : 각 엘리먼트의 개시 지연시간을 설정합니다
+                                   */
+                           	+'</showDataEffect>'
+                        +'</Pie3DSeries>'
+                    +'</series>'
+                +'</Pie3DChart>'
+            +'</rMateChart>';
+
+        // 차트 데이터
+		var chartData3 =
+		[{"browser":"option1", "share":275},
+		 {"browser":"option2", "share":275},
+		 {"browser":"option3", "share":634},
+		 {"browser":"option4", "share":2873},
+		 {"browser":"option5", "share":86}
+		];
+
+		rMateChartH5.calls("chart3", {
+		 "setLayout" : layoutStr3,
+		    "setData" : chartData3
+		});
+
+        /********* chart4 *********/
+        rMateChartH5.create("chart4", "chartHolder4", "", "100%", "100%");
+
+        var layoutStr4 =
+            '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                +'<Options>'
+                    +'<Caption text="" />'
+                    +'<SubCaption text="" textAlign="center" />'
+                +'</Options>'
+                +'<SeriesInterpolate id="ss"/>'
+                +'<Column2DChart showDataTips="true" selectionMode="multiple" columnWidthRatio="0.48">'
+                    +'<horizontalAxis>'
+                        +'<CategoryAxis categoryField="fruit"/>'
+                    +'</horizontalAxis>'
+                    +'<verticalAxis>'
+                        +'<LinearAxis maximum="2000" interval="1000"/>'
+                    +'</verticalAxis>'
+                    +'<series>'
+                        +'<Column2DSeries labelPosition="inside" yField="Price" displayName="Price" showDataEffect="{ss}" showValueLabels="[4]" strokeJsFunction="strokeFunction">'
+                        	+'<fills>'
+								//bar color
+			                    +'<SolidColor color="#009688"/>'//option1
+			                    +'<SolidColor color="#da5c53"/>'//option2
+			                    +'<SolidColor color="#f8aa27"/>'//option3
+			                +'</fills>'
+                        +'</Column2DSeries>'
+                    +'</series>'
+                +'</Column2DChart>'
+            +'</rMateChart>';
+
+        var chartData4 =
+		[{"fruit":"option1", "Price":1300},
+         {"fruit":"option2", "Price":1200},
+		 {"fruit":"option3", "Price":1600}
+		];
+
+        rMateChartH5.calls("chart4", {
+		 "setLayout" : layoutStr4,
+		 "setData" : chartData4
+		});
+
+        /********* chart5 *********/
+        rMateChartH5.create("chart5", "chartHolder5", "", "100%", "100%");
+
+        var layoutStr5 =
+            '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                +'<Options>'
+                    +'<Caption text="" />'
+                    +'<SubCaption text="" textAlign="center" />'
+                +'</Options>'
+                +'<SeriesInterpolate id="ss"/>'
+                +'<Column2DChart showDataTips="true" selectionMode="multiple" columnWidthRatio="0.48">'
+                    +'<horizontalAxis>'
+                        +'<CategoryAxis categoryField="fruit"/>'
+                    +'</horizontalAxis>'
+                    +'<verticalAxis>'
+                        +'<LinearAxis maximum="8" interval="2"/>'
+                    +'</verticalAxis>'
+                    +'<series>'
+                        +'<Column2DSeries labelPosition="inside" yField="output" displayName="output" showDataEffect="{ss}" showValueLabels="[4]" strokeJsFunction="strokeFunction">'
+                        	+'<fills>'
+								//bar color
+			                    +'<SolidColor color="#009688"/>'//option1
+			                    +'<SolidColor color="#da5c53"/>'//option2
+			                    +'<SolidColor color="#f8aa27"/>'//option3
+			                +'</fills>'
+                        +'</Column2DSeries>'
+                    +'</series>'
+                +'</Column2DChart>'
+            +'</rMateChart>';
+
+        var chartData5 =
+		[{"fruit":"option1", "output":5.5},
+         {"fruit":"option2", "output":4.2},
+		 {"fruit":"option3", "output":6.5}
+		];
+
+        rMateChartH5.calls("chart5", {
+		 "setLayout" : layoutStr5,
+		 "setData" : chartData5
+		});
+
+        /********* chart6 *********/
+        rMateChartH5.create("chart6", "chartHolder6", "", "100%", "100%");
+
+        var layoutStr6 =
+            '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                +'<Options>'
+                    +'<Caption text="" />'
+                    +'<SubCaption text="" textAlign="center" />'
+                +'</Options>'
+                +'<SeriesInterpolate id="ss"/>'
+                +'<Column2DChart showDataTips="true" selectionMode="multiple" columnWidthRatio="0.48">'
+                    +'<horizontalAxis>'
+                        +'<CategoryAxis categoryField="fruit"/>'
+                    +'</horizontalAxis>'
+                    +'<verticalAxis>'
+                        +'<LinearAxis maximum="40" interval="10"/>'
+                    +'</verticalAxis>'
+                    +'<series>'
+                        +'<Column2DSeries labelPosition="inside" yField="income" displayName="income" showDataEffect="{ss}" showValueLabels="[4]" strokeJsFunction="strokeFunction">'
+                        	+'<fills>'
+								//bar color
+			                    +'<SolidColor color="#009688"/>'//option1
+			                    +'<SolidColor color="#da5c53"/>'//option2
+			                    +'<SolidColor color="#f8aa27"/>'//option3
+			                +'</fills>'
+                        +'</Column2DSeries>'
+                    +'</series>'
+                +'</Column2DChart>'
+            +'</rMateChart>';
+
+        var chartData6 =
+		[{"fruit":"option1", "income":30},
+         {"fruit":"option2", "income":34},
+		 {"fruit":"option3", "income":27}
+		];
+
+        rMateChartH5.calls("chart6", {
+		 "setLayout" : layoutStr6,
+		 "setData" : chartData6
+		});
+
+    </script>
+</body>
+</html>

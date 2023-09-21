@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NH 빅데이터 포털</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/jquery/jquery-ui.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="lib/rMateChartH5/Assets/Css/rMateChartH5.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/visualization.css">
+     <!-- JS -->
+    <script src="lib/jquery/jquery.min.js"></script>   
+    <script src="lib/jquery/jquery-migrate.min.js"></script>   
+    <script src="lib/jquery/jquery-ui.js"></script>   
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>   
+    <script src="lib/LicenseKey/rMateChartH5License.js"></script>
+    <script src="lib/rMateChartH5/JS/rMateChartH5.js"></script>
+    <script src="js/includeHTML.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/visualization.js"></script>
+</head>
+<body>
+   	<!-- skipToContent -->
+    <div id="skipToContent">
+        <a href="#goContent">본문 바로가기</a>
+    </div><!-- // skipToContent -->
+    
+    <div class="wrap">
+        <header class="header-wrap header-border-color">  
+		   <div class="navbar" include-html="">
+		   		<div class="header inner">
+					<h1><a href="/"><img src="img/logo.png" alt=""></a></h1>
+
+					<!--gnb-->
+					<nav class="gnb-wrap">
+						<ul class="gnb">
+							<li class="disable">
+								<a href="javascript:;">데이터서비스</a>
+							</li>
+							<li class="disable">
+								<a href="javascript:;">서비스신청</a>
+							</li>
+							<li class="disable">
+								<a href="javascript:;">분석서비스</a>
+							</li>
+							<li>
+								<a href="javascript:;">시각화서비스</a>
+								<div class="gnb-dep2">
+									<ul>
+										<li><a href="./visualService_1.1.html">메뉴1</a></li>
+										<li><a href="./visualService_2.1.html">메뉴2</a></li>
+									</ul>
+								</div><!--// gnb-dep2 -->
+							</li>
+							<li class="disable">
+								<a href="javascript:;">커뮤니티</a>
+							</li>
+						</ul>
+					</nav>
+					<!--// gnb-->
+					<div class="header-right">
+						<a href="#" class="login-btn" title="로그인"><span class="hidden">로그인</span></a>
+						<div class="sitemap">
+							<button type="button" class="sitemap-open"></button>
+							<div class="sitemap-list">
+								<div class="inner">
+									<dl>
+										<dt>데이터서비스</dt>
+										<dd>
+											<ul>
+												<li>
+													<a href="#">메뉴1</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴1-1</a></li>
+														<li><a href="#">메뉴1-2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴2</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴2-1</a></li>
+														<li><a href="#">메뉴2-2</a></li>
+														<li><a href="#">메뉴2-3</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴3</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴3-1</a></li>
+														<li><a href="#">메뉴3-2</a></li>
+														<li><a href="#">메뉴3-3</a></li>
+														<li><a href="#">메뉴3-4</a></li>
+													</ul>
+												</li>
+											</ul>
+										</dd>
+										
+									</dl>
+									<dl>
+										<dt>신청서비스</dt>
+										<dd>
+											<ul>
+												<li><a href="#">메뉴1</a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>분석서비스</dt>
+										<dd>
+											<ul>
+												<li>
+													<a href="#">메뉴1</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴1-1</a></li>
+														<li><a href="#">메뉴1-2</a></li>
+														<li><a href="#">메뉴1-3</a></li>
+														<li><a href="#">메뉴1-4</a></li>
+														<li><a href="#">메뉴1-5</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴2</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴2-1</a></li>
+														<li><a href="#">메뉴2-2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴3</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴3-1</a></li>
+														<li><a href="#">메뉴3-2</a></li>
+													</ul>
+												</li>
+											</ul>
+										</dd>
+										
+									</dl>
+									<dl>
+										<dt>시각화서비스</dt>
+										<dd>
+											<ul>
+												<li>
+													<a href="#">메뉴1</a>
+													<ul class="depth2">
+														<li><a href="./visualService_1.1.html">메뉴1-1</a></li>
+														<li><a href="./visualService_1.2.html">메뉴1-2</a></li>
+														<li><a href="./visualService_1.3.html">메뉴1-3</a></li>
+														<li><a href="./visualService_1.4.html">메뉴1-4</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴2</a>
+													<ul class="depth2">
+														<li><a href="./visualService_2.1.html">메뉴2-1</a></li>
+														<li><a href="./visualService_2.2.html">메뉴2-2</a></li>
+														<li><a href="./visualService_2.3.html">메뉴2-3</a></li>
+														<li><a href="./visualService_2.4.html">메뉴2-4</a></li>
+													</ul>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>커뮤니티</dt>
+										<dd>
+											<ul>
+												<li><a href="#">메뉴1</a></li>
+												<li><a href="#">메뉴2</a></li>
+												<li><a href="#">메뉴3</a></li>
+												<li><a href="#">메뉴4</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<button type="button" class="sitemap-close"></button>
+							</div>
+						</div><!--sitemap-->
+
+					</div><!--//header-right-->
+				</div><!--//header-->
+				<div class="gnb-bg"></div>
+		   </div><!--//navbar-->
+	    </header><!--//header-->
+                
+        <div class="container">
+        	<div id="goContent" class="hidden"><h1>메인콘텐츠</h1></div>
+        	<div class="sub-content">
+        		<div class="inner">
+					<div class="sidebar">
+						<div class="sidebar-title">
+							<h2>시각화서비스</h2>
+							<small class="bg-color1">Visualize Service</small>
+						</div>
+						<div class="sidebar-nav">
+							<ul>
+								<li>
+									<a href="javascript:;">메뉴1</a>
+									<ul class="depth2">
+										<li><a href="./visualService_1.1.html">메뉴1-1</a></li>
+										<li><a href="./visualService_1.2.html">메뉴1-2</a></li>
+										<li><a href="./visualService_1.3.html">메뉴1-3</a></li>
+										<li><a href="./visualService_1.4.html">메뉴1-4</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;">메뉴2</a>
+									<ul class="depth2">
+										<li><a href="./visualService_2.1.html">메뉴2-1</a></li>
+										<li><a href="./visualService_2.2.html">메뉴2-2</a></li>
+										<li><a href="./visualService_2.3.html">메뉴2-3</a></li>
+										<li><a href="./visualService_2.4.html">메뉴2-4</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!--// sidebar-->
+
+					<div class="page-content visualization"><!-- 시각화 서비스 : visualization class 추가 -->
+						<div class="page-title">
+							<h3>메뉴2-1</h3>
+						</div><!-- page-title-->
+						<div class="page-visual">
+							<img src="img/sub-visual-img1.jpg" alt="">
+						</div><!--//page-visual-->
+
+						<div class="board-write">
+							<!-- search -->
+							<div class="area-search">
+								<div class="tbl-search">
+									<table summary="조회 선택">
+										<colgroup>
+											<col style="width:6%;">
+											<col style="width:*;">
+											<col style="width:140px;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>선택</th>
+												<td>
+													<div class="frm-select w20">
+														<select title="선택">
+															<option>option1</option>
+															<option>option2</option>
+															<option selected="selected">option3</option>
+														</select>
+													</div>
+													<div class="frm-select w20">
+														<select title="선택">
+															<option>option1</option>
+															<option>option2</option>
+															<option selected="selected">option3</option>
+														</select>
+													</div>
+													<div class="frm-select w20">
+														<select title="선택">
+															<option>option1</option>
+															<option>option2</option>
+															<option selected="selected">option3</option>
+														</select>
+													</div>
+												</td>
+												<td><button type="button" class="btn-search"><span>조회하기</span></button></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- //search -->
+							<!-- search result -->
+							<div class="area-result">
+								<div class="grp-row">
+									<!-- title1 -->
+									<h4>title1</h4>
+									<div class="row">
+										<div class="graph-wrap">
+											<div class="map-area">
+												<div class="weather-box">
+													<div class="wh-top">
+														<span class="tit">조회일자</span>
+														<div class="frm-date">
+															<div class="date-box">
+																<input type="text" name="" id="mapDate" title="조회일자 선택">
+															</div>
+														</div>
+													</div>
+													<div class="wt-bottom">
+														<div class="temp">
+															<p class="tit">일평균 기온</p>
+															<p class="num">17.1<span class="unit">&#8451;</span></p>
+															<p class="compare high">전일보다 3<span class="unit">&#8451;</span> 높아요.</p>
+														</div>
+														<ul class="air">
+															<li class="hum">
+																<p class="tit">습도</p>
+																<div class="cont">
+																	<span class="num">35</span>
+																	<span class="unit">%</span>
+																</div>
+															</li>
+															<li class="wind">
+																<p class="tit">바람</p>
+																<div class="cont">
+																	<span class="subtit">북동</span>
+																	<span class="num">0.8</span>
+																	<span class="unit">m/s</span>
+																</div>
+															</li>
+															<li class="prec">
+																<p class="tit">1시간 강수량</p>
+																<div class="cont">
+																	<span class="num">35</span>
+																	<span class="unit">mm</span>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="map-box">
+													<!-- 맵 영역 -->
+													<p>맵핑 영역</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //title1 -->
+									<!-- title2 -->
+									<div class="row w50">
+										<h4>title2</h4>
+										<div class="graph-wrap">
+											<div class="area-graph">
+												<div id="chartHolder1" class="chart-control" style="width:100%; height:350px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title2 -->
+									<!-- title3 -->
+									<div class="row w50">
+										<h4>title3</h4>
+										<div class="graph-wrap">
+											<div class="area-graph">
+												<div id="chartHolder2" class="chart-control" style="width:100%; height:350px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title3 -->
+									<!-- title4 -->
+									<div class="row w50">
+										<h4>title4</h4>
+										<div class="graph-wrap">
+											<div class="tit left">
+												<h5>조회일자</h5>
+												<div class="frm-date">
+													<div class="date-box"><input type="text" name="" id="startDate" title="시작일자 선택"></div>
+													<span class="bar">~</span>
+													<div class="date-box"><input type="text" name="" id="endDate" title="종료일자 선택"></div>
+												</div>
+											</div>
+											<div class="area-graph">
+												<div id="chartHolder3" class="chart-control" style="width:100%; height:350px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title4 -->
+									<!-- title5 -->
+									<div class="row w50">
+										<h4>title5</h4>
+										<div class="graph-wrap">
+											<div class="area-graph">
+												<div id="chartHolder4" class="chart-control" style="width:100%; height:405px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title5 -->
+								</div>
+							</div>
+							<!-- //search result -->
+						</div>
+						<!--// board-write -->
+					</div><!--// page-content -->
+				</div><!--// inner -->
+			</div><!--// sub-content -->
+        </div><!--// container -->        
+        
+        <footer class="footer-wrap">     
+			<div class="inner">
+				<div class="footer-txt">
+					<div class="info">
+						<span>서울시 중구 새문안로 16</span>
+						<span>대표자 : 000</span>
+						<span>사업자등록번호 : 000-00-00000 </span>
+						<span>전화번호 안내 : 00-0000-0000 </span><br>
+						<span>금융문의  농협은행 : 0000-3000, 0000-0000</span>
+						<span>농 . 축협 : 0000-0000, 0000-0000</span>
+					</div>
+					<cite>Copyright ⓒ staryacht  All Right Reserved.</cite>
+				</div>
+			</div>
+            <button type="button" class="btn-gotop" title="상단으로 이동">TOP</button>
+        </footer><!--//footer-wrap-->
+    </div><!--//wrap-->	
+    </div>
+    <script>
+    	$(document).ready(function(){
+	    	//datepicker
+			function date(){
+		        $.datepicker.setDefaults({
+		            dateFormat: 'yy.mm.dd' 
+		            ,showOtherMonths: true 
+		            ,showButtonPanel: true
+		            ,buttonImageOnly: true
+		            ,buttonImage: "img/visualization/img_calendar.png"
+		            ,buttonText: "날짜를 선택해 주세요."
+		            ,changeYear: true
+		            ,changeMonth: true            
+		            ,showOn: "both"
+		            //,yearSuffix: "년"
+		            ,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] 
+		            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월']
+		            ,dayNamesMin: ['일','월','화','수','목','금','토']
+		            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
+		            //,minDate: "-7D" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+		            ,maxDate: "today" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)           
+		        });
+
+		        $("#mapDate, #startDate, #endDate").datepicker();  
+
+		        //map 조회일자의 초기값을 오늘로 설정
+		        $('#mapDate').datepicker('setDate', 'today');              
+		        
+		        //From의 초기값을 일주일 전 날짜로 설정
+		        $('#startDate').datepicker('setDate', '-7D');
+		        
+		        //To의 초기값을 오늘로 설정
+		        $('#endDate').datepicker('setDate', 'today');
+		    }
+
+		    date();
+    	});
+
+
+    	/********* chart1 *********/
+    	rMateChartH5.create("chart1", "chartHolder1", "", "100%", "100%");
+    	var layoutStr1 =
+        	'<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+            	+'<Options>'
+                	+'<Caption text=""/>'
+                    +'<Legend useVisibleCheck="true"/>'
+                +'</Options>'
+                 +'<CurrencyFormatter id="numFmt" currencySymbol="%" alignSymbol="right"/>'
+                 +'<Pie2DChart showDataTips="true">'
+                	+'<series>'
+                    	+'<Pie2DSeries nameField="browser" field="share" labelPosition="inside" color="#ffffff">'
+                            +'<showDataEffect>'
+                                +'<SeriesSlide duration="1000"/>'
+                            +'</showDataEffect>'
+                            //pie color
+                              +'<fills>'
+                                  +'<SolidColor color="#f8aa27"/>'
+                                  +'<SolidColor color="#009688"/>'
+                                  +'<SolidColor color="#00695c"/>'
+                                  +'<SolidColor color="#06373a"/>'
+                              +'</fills>'
+                        +'</Pie2DSeries>'
+                    +'</series>'
+            	+'</Pie2DChart>'
+            +'</rMateChart>';
+
+        // 차트 데이터
+		var chartData1 =
+		 [{"browser":"option1", "share":40},
+		  {"browser":"option2", "share":21},
+		  {"browser":"option3", "share":19},
+		  {"browser":"option4", "share":15}
+		 ];
+
+		 rMateChartH5.calls("chart1", {
+			 "setLayout" : layoutStr1,
+			 "setData" : chartData1
+		});
+
+		/********* chart2 *********/
+		rMateChartH5.create("chart2", "chartHolder2", "", "100%", "100%");
+
+		var layoutStr2 =
+            '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                +'<Options>'
+                    +'<Caption text="" />'
+                    +'<SubCaption text="" textAlign="center" />'
+                +'</Options>'
+                +'<SeriesInterpolate id="ss"/>'
+                +'<Column2DChart showDataTips="true" selectionMode="multiple" columnWidthRatio="0.48">'
+                    +'<horizontalAxis>'
+                        +'<CategoryAxis categoryField="Country"/>'
+                    +'</horizontalAxis>'
+                    +'<verticalAxis>'
+                        +'<LinearAxis maximum="100" interval="10"/>'
+                    +'</verticalAxis>'
+                    +'<series>'
+                        +'<Column2DSeries labelPosition="outside" yField="GDP" displayName="GDP Growth (In %)" showDataEffect="{ss}" showValueLabels="[4]" strokeJsFunction="strokeFunction">'
+                        	+'<fills>'
+								//bar color
+			                    +'<SolidColor color="#f8aa27"/>'
+			                    +'<SolidColor color="#00695c"/>'
+			                    +'<SolidColor color="#06373a"/>'
+			                    +'<SolidColor color="#009688"/>'
+			                    +'<SolidColor color="#82cb92"/>'
+			                +'</fills>'
+                        +'</Column2DSeries>'
+                    +'</series>'
+                +'</Column2DChart>'
+            +'</rMateChart>';
+		
+		var chartData2 =
+			[{"Country":"option1", "GDP":20},
+             {"Country":"option2", "GDP":30},
+		     {"Country":"option3", "GDP":51.2},
+		     {"Country":"option4", "GDP":44.5},
+		     {"Country":"option5", "GDP":62.35}
+		    ];
+
+		rMateChartH5.calls("chart2", {
+		  "setLayout" : layoutStr2,
+		    "setData" : chartData2
+		});
+
+		/********* chart3 *********/
+		rMateChartH5.create("chart3", "chartHolder3", "", "100%", "100%");
+
+		var layoutStr3 =
+            '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                +'<Options>'
+                    +'<Caption text="" />'
+                    +'<SubCaption text="" textAlign="center" />'
+                +'</Options>'
+                +'<SeriesInterpolate id="ss"/>'
+                +'<Column2DChart showDataTips="true" selectionMode="multiple" columnWidthRatio="0.48">'
+                    +'<horizontalAxis>'
+                        +'<CategoryAxis categoryField="Country"/>'
+                    +'</horizontalAxis>'
+                    +'<verticalAxis>'
+                        +'<LinearAxis maximum="100" interval="10"/>'
+                    +'</verticalAxis>'
+                    +'<series>'
+                        +'<Column2DSeries labelPosition="outside" yField="GDP" displayName="GDP Growth (In %)" showDataEffect="{ss}" showValueLabels="[4]" strokeJsFunction="strokeFunction">'
+                        	+'<fills>'
+								//bar color
+			                    +'<SolidColor color="#f8aa27"/>'
+			                    +'<SolidColor color="#00695c"/>'
+			                    +'<SolidColor color="#06373a"/>'
+			                    +'<SolidColor color="#009688"/>'
+			                    +'<SolidColor color="#82cb92"/>'
+			                +'</fills>'
+                        +'</Column2DSeries>'
+                    +'</series>'
+                +'</Column2DChart>'
+            +'</rMateChart>';
+		
+		var chartData3 =
+			[{"Country":"option1", "GDP":20},
+             {"Country":"option2", "GDP":30},
+		     {"Country":"option3", "GDP":51.2},
+		     {"Country":"option4", "GDP":44.5},
+		     {"Country":"option5", "GDP":62.35}
+		    ];
+
+		rMateChartH5.calls("chart3", {
+		  "setLayout" : layoutStr3,
+		    "setData" : chartData3
+		});
+
+		/********* chart4 *********/
+		rMateChartH5.create("chart4", "chartHolder4", "", "100%", "100%");
+
+		var layoutStr4 =
+            '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                +'<Options>'
+                    +'<Caption text="" />'
+                    +'<SubCaption text="" textAlign="right" />'
+                +'</Options>'
+                +'<Bar2DChart showDataTips="true">'
+                    +'<horizontalAxis>'
+                        +'<LinearAxis maximum="40000"/>'
+                    +'</horizontalAxis>'
+                    +'<verticalAxis>'
+                        +'<CategoryAxis categoryField="Month"/>'
+                    +'</verticalAxis>'
+                    +'<series>'
+                        +'<Bar2DSeries labelPosition="inside" xField="Rainfall" displayName="Rainfall" showValueLabels="[6,7]" color="#ffffff" insideLabelYOffset="-2">'
+                            +'<fills>'
+								//bar color
+			                    +'<SolidColor color="#f8aa27"/>'
+			                    +'<SolidColor color="#00695c"/>'
+			                    +'<SolidColor color="#06373a"/>'
+			                    +'<SolidColor color="#009688"/>'
+			                    +'<SolidColor color="#82cb92"/>'
+			                +'</fills>'
+                            +'<showDataEffect>'
+                                +'<SeriesInterpolate/>'
+                            +'</showDataEffect>'
+                        +'</Bar2DSeries>'
+                    +'</series>'
+                +'</Bar2DChart>'
+            +'</rMateChart>';
+			  
+			  // 차트 데이터
+			var chartData4 =
+			[{"Month":"option1", "Rainfall":27500},
+		     {"Month":"option2", "Rainfall":27639},
+		 	 {"Month":"option3", "Rainfall":27778},
+			 {"Month":"option4", "Rainfall":33300},
+		 	 {"Month":"option5", "Rainfall":35000}];
+			
+			rMateChartH5.calls("chart4", {
+				"setLayout" : layoutStr4,
+				"setData" : chartData4
+			});
+
+
+		rMateChartH5.registerTheme(rMateChartH5.themes);
+
+		function rMateChartH5ChangeTheme(theme){
+		    document.getElementById("chart1").setTheme(theme);
+		    document.getElementById("chart2").setTheme(theme);
+		    document.getElementById("chart3").setTheme(theme);
+		    document.getElementById("chart4").setTheme(theme);
+		}
+
+    </script>
+</body>
+</html>

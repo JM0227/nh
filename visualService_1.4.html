@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NH 빅데이터 포털</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/jquery/jquery-ui.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="lib/rMateChartH5/Assets/Css/rMateChartH5.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/visualization.css">
+     <!-- JS -->
+    <script src="lib/jquery/jquery.min.js"></script>   
+    <script src="lib/jquery/jquery-migrate.min.js"></script>   
+    <script src="lib/jquery/jquery-ui.js"></script>   
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>   
+    <script src="lib/LicenseKey/rMateChartH5License.js"></script>
+    <script src="lib/rMateChartH5/JS/rMateChartH5.js"></script>
+    <script src="js/includeHTML.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/visualization.js"></script>
+</head>
+<body>
+   	<!-- skipToContent -->
+    <div id="skipToContent">
+        <a href="#goContent">본문 바로가기</a>
+    </div><!-- // skipToContent -->
+    
+    <div class="wrap">
+        <header class="header-wrap header-border-color">  
+		   <div class="navbar" include-html="">
+		   		<div class="header inner">
+					<h1><a href="/"><img src="img/logo.png" alt=""></a></h1>
+
+					<!--gnb-->
+					<nav class="gnb-wrap">
+						<ul class="gnb">
+							<li class="disable">
+								<a href="javascript:;">데이터서비스</a>
+							</li>
+							<li class="disable">
+								<a href="javascript:;">서비스신청</a>
+							</li>
+							<li class="disable">
+								<a href="javascript:;">분석서비스</a>
+							</li>
+							<li>
+								<a href="javascript:;">시각화서비스</a>
+								<div class="gnb-dep2">
+									<ul>
+										<li><a href="./visualService_1.1.html">메뉴1</a></li>
+										<li><a href="./visualService_2.1.html">메뉴2</a></li>
+									</ul>
+								</div><!--// gnb-dep2 -->
+							</li>
+							<li class="disable">
+								<a href="javascript:;">커뮤니티</a>
+							</li>
+						</ul>
+					</nav>
+					<!--// gnb-->
+					<div class="header-right">
+						<a href="#" class="login-btn" title="로그인"><span class="hidden">로그인</span></a>
+						<div class="sitemap">
+							<button type="button" class="sitemap-open"></button>
+							<div class="sitemap-list">
+								<div class="inner">
+									<dl>
+										<dt>데이터서비스</dt>
+										<dd>
+											<ul>
+												<li>
+													<a href="#">메뉴1</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴1-1</a></li>
+														<li><a href="#">메뉴1-2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴2</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴2-1</a></li>
+														<li><a href="#">메뉴2-2</a></li>
+														<li><a href="#">메뉴2-3</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴3</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴3-1</a></li>
+														<li><a href="#">메뉴3-2</a></li>
+														<li><a href="#">메뉴3-3</a></li>
+														<li><a href="#">메뉴3-4</a></li>
+													</ul>
+												</li>
+											</ul>
+										</dd>
+										
+									</dl>
+									<dl>
+										<dt>신청서비스</dt>
+										<dd>
+											<ul>
+												<li><a href="#">메뉴1</a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>분석서비스</dt>
+										<dd>
+											<ul>
+												<li>
+													<a href="#">메뉴1</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴1-1</a></li>
+														<li><a href="#">메뉴1-2</a></li>
+														<li><a href="#">메뉴1-3</a></li>
+														<li><a href="#">메뉴1-4</a></li>
+														<li><a href="#">메뉴1-5</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴2</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴2-1</a></li>
+														<li><a href="#">메뉴2-2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴3</a>
+													<ul class="depth2">
+														<li><a href="#">메뉴3-1</a></li>
+														<li><a href="#">메뉴3-2</a></li>
+													</ul>
+												</li>
+											</ul>
+										</dd>
+										
+									</dl>
+									<dl>
+										<dt>시각화서비스</dt>
+										<dd>
+											<ul>
+												<li>
+													<a href="#">메뉴1</a>
+													<ul class="depth2">
+														<li><a href="./visualService_1.1.html">메뉴1-1</a></li>
+														<li><a href="./visualService_1.2.html">메뉴1-2</a></li>
+														<li><a href="./visualService_1.3.html">메뉴1-3</a></li>
+														<li><a href="./visualService_1.4.html">메뉴1-4</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">메뉴2</a>
+													<ul class="depth2">
+														<li><a href="./visualService_2.1.html">메뉴2-1</a></li>
+														<li><a href="./visualService_2.2.html">메뉴2-2</a></li>
+														<li><a href="./visualService_2.3.html">메뉴2-3</a></li>
+														<li><a href="./visualService_2.4.html">메뉴2-4</a></li>
+													</ul>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>커뮤니티</dt>
+										<dd>
+											<ul>
+												<li><a href="#">메뉴1</a></li>
+												<li><a href="#">메뉴2</a></li>
+												<li><a href="#">메뉴3</a></li>
+												<li><a href="#">메뉴4</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<button type="button" class="sitemap-close"></button>
+							</div>
+						</div><!--sitemap-->
+
+					</div><!--//header-right-->
+				</div><!--//header-->
+				<div class="gnb-bg"></div>
+		   </div><!--//navbar-->
+	    </header><!--//header-->
+                
+        <div class="container">
+        	<div id="goContent" class="hidden"><h1>메인콘텐츠</h1></div>
+        	<div class="sub-content">
+        		<div class="inner">
+					<div class="sidebar">
+						<div class="sidebar-title">
+							<h2>시각화서비스</h2>
+							<small class="bg-color1">Visualize Service</small>
+						</div>
+						<div class="sidebar-nav">
+							<ul>
+								<li>
+									<a href="javascript:;">메뉴1</a>
+									<ul class="depth2">
+										<li><a href="./visualService_1.1.html">메뉴1-1</a></li>
+										<li><a href="./visualService_1.2.html">메뉴1-2</a></li>
+										<li><a href="./visualService_1.3.html">메뉴1-3</a></li>
+										<li><a href="./visualService_1.4.html">메뉴1-4</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;">메뉴2</a>
+									<ul class="depth2">
+										<li><a href="./visualService_2.1.html">메뉴2-1</a></li>
+										<li><a href="./visualService_2.2.html">메뉴2-2</a></li>
+										<li><a href="./visualService_2.3.html">메뉴2-3</a></li>
+										<li><a href="./visualService_2.4.html">메뉴2-4</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!--// sidebar-->
+
+					<div class="page-content visualization"><!-- 시각화 서비스 : visualization class 추가 -->
+						<div class="page-title">
+							<h3>메뉴1-4</h3>
+						</div><!-- page-title-->
+						<div class="page-visual">
+							<img src="img/sub-visual-img1.jpg" alt="">
+						</div><!--//page-visual-->
+
+						<div class="board-write">
+							<!-- search -->
+							<div class="area-search">
+								<div class="tbl-search">
+									<table summary="조회항목 선택">
+										<colgroup>
+											<col style="width:8%;">
+											<col style="width:54%;">
+											<col style="width:8%;">
+											<col style="width:16%;">
+											<col style="width:15%;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>date</th>
+												<td>
+													<div class="frm-date" id="datePick">
+														<div class="date-box">
+															<input type="text" name="" id="startDate" title="시작일자 선택">
+														</div>
+														<div class="bar">~</div>
+														<div class="date-box">
+															<input type="text" name="" id="endDate" title="종료일자 선택">
+														</div>
+													</div>
+													<div class="frm-radio ml-15">
+														<div class="radio-box">
+															<input type="radio" name="period" id="year" value="1" title="년도로 선택" disabled="disabled">
+															<label for="year">년</label>
+														</div>
+														<div class="radio-box">
+															<input type="radio" name="period" id="month" value="2" title="달로 선택" checked="checked">
+															<label for="month">월</label>
+														</div>
+														</div>
+													</div>
+												</td>
+												<th>select</th>
+												<td>
+													<div class="frm-select">
+														<select title="조회품목 선택">
+															<option>option1</option>
+															<option>option2</option>
+														</select>
+													</div>
+												</td>
+												<td><button type="button" class="btn-search"><span>조회하기</span></button></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- //search -->
+							<!-- search result -->
+							<div class="area-result">
+								<button type="button" id="btnHelp" class="btn-help js-open" data-pop="pageDesc" title="popup button 자세히보기"><span>popup button</span></button>
+								<div class="grp-row">
+									<!-- title1 -->
+									<div class="row w50">
+										<h4>title1</h4>
+										<div class="graph-wrap">
+											<div class="tit">
+												<h5>title</h5>
+											</div>
+											<div class="area-graph">
+												<!-- 그래프 -->
+												<div id="chartHolder1" class="chart-control" style="width:100%; height:280px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title1 -->
+									<!-- title2 -->								
+									<div class="row w50">
+										<h4>title2</h4>
+										<div class="graph-wrap">
+											<div class="tit">
+												<h5>title</h5>
+											</div>
+											<div class="area-graph">
+												<!-- 그래프 -->
+												<div id="chartHolder2" class="chart-control" style="width:100%; height:280px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title2 -->
+									<!-- title3 -->								
+									<div class="row w50">
+										<h4>title3</h4>
+										<div class="graph-wrap">
+											<div class="tit">
+												<h5>title</h5>
+											</div>
+											<div class="area-graph">
+												<!-- 그래프 -->
+												<div id="chartHolder3" class="chart-control" style="width:100%; height:280px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title3 -->
+									<!-- title4 -->								
+									<div class="row w50">
+										<h4>title4</h4>
+										<div class="graph-wrap">
+											<div class="tit">
+												<h5>title</h5>
+											</div>
+											<div class="area-graph">
+												<!-- 그래프 -->
+												<div id="chartHolder4" class="chart-control" style="width:100%; height:280px;"></div>
+											</div>
+										</div>
+									</div>
+									<!-- //title4 -->
+								</div>
+							</div>
+							<!-- //search result -->
+						</div>
+						<!--// board-write -->
+					</div><!--// page-content -->
+				</div><!--// inner -->
+			</div><!--// sub-content -->
+        </div><!--// container -->        
+        
+        <footer class="footer-wrap">     
+			<div class="inner">
+				<div class="footer-txt">
+					<div class="info">
+						<span>서울시 중구 새문안로 16</span>
+						<span>대표자 : 000</span>
+						<span>사업자등록번호 : 000-00-00000 </span>
+						<span>전화번호 안내 : 00-0000-0000 </span><br>
+						<span>금융문의  농협은행 : 0000-3000, 0000-0000</span>
+						<span>농 . 축협 : 0000-0000, 0000-0000</span>
+					</div>
+					<cite>Copyright ⓒ staryacht  All Right Reserved.</cite>
+				</div>
+			</div>
+            <button type="button" class="btn-gotop" title="상단으로 이동">TOP</button>
+        </footer><!--//footer-wrap-->
+    </div><!--//wrap-->	
+    <!-- popup -->
+    <div class="layer-popup js-layer" id="pageDesc">
+    	<div class="popup-head">
+    		<p class="tit">popup title</p>
+    		<button type="button" class="popup-close js-close"><span class="hidden">닫기</span></button>
+    	</div>
+    	<!-- 2021.11.23 수정 -->
+    	<div class="popup-body">
+    		<div class="popup-content">
+	    		<p class="sub-tit">title1</p>
+	    		<div class="tbl-type2">
+	    			<table summery="title1">
+	    				<colgroup>
+	    					<col style="width:20%">
+	    					<col style="width:60%">
+	    					<col style="width:20%">
+	    				</colgroup>
+	    				<thead>
+	    					<th scope="col">text</th>
+	    					<th scope="col">text(text)</th>
+	    					<th scope="col">text</th>
+	    				</thead>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다.</td>
+	    					<td>설명 텍스트입니다.</td>
+	    				</tr>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다.</td>
+	    					<td>설명 텍스트입니다.</td>
+	    				</tr>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다.</td>
+	    					<td>설명 텍스트입니다.</td>
+	    				</tr>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다. / 설명 텍스트입니다.</td>
+	    					<td>설명 텍스트입니다.</td>
+	    				</tr>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다.</td>
+	    					<td>설명 텍스트입니다.</td>
+	    				</tr>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다.</td>
+	    					<td>설명 텍스트입니다.</td>
+	    				</tr>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다.</td>
+	    					<td>설명 텍스트입니다.</td>
+	    				</tr>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다. / 설명 텍스트입니다.</td>
+	    					<td>설명 텍스트<sup>1)</sup></td>
+	    				</tr>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다. / 설명 텍스트입니다.</td>
+	    					<td>텍스트</td>
+	    				</tr>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다. / 설명 텍스트입니다.</td>
+	    					<td>텍스트</td>
+	    				</tr>
+	    				<tr>
+	    					<th scope="row">text</th>
+	    					<td>설명 텍스트입니다.</td>
+	    					<td>텍스트</td>
+	    				</tr>
+	    			</table>
+	    		</div>
+	    		<ul class="sup-list">
+	    			<li>1) 설명 텍스트입니다.</li>
+	    		</ul>
+	    	</div>
+	    	<div class="popup-content">
+	    		<p class="sub-tit">title2</p>
+	    		<div class="tbl-type2">
+	    			<table summery="title2">
+	    				<colgroup>
+	    					<col style="width:20%">
+	    					<col style="width:45%">
+	    					<col style="width:20%">
+	    					<col style="width:15%">
+	    				</colgroup>
+	    				<thead>
+	    					<th scope="col">text</th>
+	    					<th scope="col">text</th>
+	    					<th scope="col">text</th>
+	    					<th scope="col">text</th>
+	    				</thead>
+	    				<tbody>
+	    					<tr>
+	    						<th scope="row">설명 텍스트입니다. 설명 텍스트입니다.</th>
+	    						<td>설명 텍스트입니다. 설명 텍스트입니다.</td>
+	    						<td class="txt-cnt">설명 텍스트입니다.</td>
+	    						<td class="txt-cnt">설명 텍스트입니다.</td>
+	    					</tr>
+	    				</tbody>
+	    			</table>
+	    		</div>
+	    	</div>
+	    	<div class="popup-content">
+	    		<p class="sub-tit">title3</p>
+	    		<div class="tbl-type2">
+	    			<table summery="title3">
+	    				<colgroup>
+	    					<col style="width:20%">
+	    					<col style="width:45%">
+	    					<col style="width:20%">
+	    					<col style="width:15%">
+	    				</colgroup>
+	    				<thead>
+	    					<th scope="col">text</th>
+	    					<th scope="col">text</th>
+	    					<th scope="col">text</th>
+	    					<th scope="col">text</th>
+	    				</thead>
+	    				<tbody>
+	    					<tr>
+	    						<th scope="row">text</th>
+	    						<td>설명 텍스트입니다. 설명 텍스트입니다.</td>
+	    						<td class="txt-cnt">설명 텍스트입니다.</td>
+	    						<td class="txt-cnt">설명 텍스트입니다.</td>
+	    					</tr>
+	    					<tr>
+	    						<th scope="row">text</th>
+	    						<td class="txt-color-red">설명 텍스트입니다. 설명 텍스트입니다. 설명 텍스트입니다. 설명 텍스트입니다. 설명 텍스트입니다.</td>
+	    						<td class="txt-cnt">설명 텍스트입니다.</td>
+	    						<td class="txt-cnt">설명 텍스트입니다.</td>
+	    					</tr>
+	    				</tbody>
+	    			</table>
+	    		</div>
+	    	</div>
+    	</div>
+    	<!-- //2021.11.23 수정 끝 -->
+    </div>
+    <!-- //popup -->
+    <script>
+    	$(document).ready(function(){
+			//datepicker
+			function date(){
+		        $.datepicker.setDefaults({
+		            dateFormat: 'yy.mm.dd' 
+		            ,showOtherMonths: true 
+		            ,showButtonPanel: true
+		            ,buttonImageOnly: true
+		            ,buttonImage: "img/visualization/img_calendar.png"
+		            ,buttonText: "날짜를 선택해 주세요."
+		            ,changeYear: true
+		            ,changeMonth: true            
+		            ,showOn: "both"
+		            //,yearSuffix: "년"
+		            ,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] 
+		            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월']
+		            ,dayNamesMin: ['일','월','화','수','목','금','토']
+		            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
+		            //,minDate: "-7D" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+		            ,maxDate: "today" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)           
+		        });
+
+		        $("#startDate, #endDate").datepicker();                
+		        
+		        //From의 초기값을 일주일 전 날짜로 설정
+		        $('#startDate').datepicker('setDate', '-7D');
+		        
+		        //To의 초기값을 오늘로 설정
+		        $('#endDate').datepicker('setDate', 'today');
+		    }
+
+		    date();
+
+		    /********* chart1 : 수입동향 *********/
+			rMateChartH5.create("chart1", "chartHolder1", "", "100%", "100%");
+
+			// 스트링 형식으로 레이아웃 정의
+			var layoutStr =
+             '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                   +'<Options>'
+                      +'<Caption text=""/>'
+                        +'<Legend useVisibleCheck="true"/>'
+                   +'</Options>'
+                 +'<NumberFormatter id="numFmt1" useThousandsSeparator="true"/>'
+                   +'<CurrencyFormatter id="numFmt2" precision="0" currencySymbol="%" alignSymbol="right"/>'
+                 +'<Combination2DChart showDataTips="true" dataTipJsFunction="dataTipJsFunc">'
+                     +'<horizontalAxis>'
+                           +'<CategoryAxis categoryField="Month" padding="0.5"/>'
+                        +'</horizontalAxis>'
+                      +'<verticalAxis>'
+                         +'<LinearAxis id="vAxis1" formatter="{numFmt1}"/>'
+                        +'</verticalAxis>'
+                        +'<series>'
+                           +'<Column2DSet type="clustered">'
+                            +'<series>'
+                               +'<Column2DSeries yField="sales" displayName="option1" labelPosition="outside" showValueLabels="[2]">'
+                               	 //bar color1
+                                  +'<fill>'
+                                     +'<SolidColor color="#009688"/>'
+                                  +'</fill>'
+                                    +'<showDataEffect>'
+                                       +'<SeriesInterpolate/>'
+                                   +'</showDataEffect>'
+                              +'</Column2DSeries>'
+                              +'<Column2DSeries yField="cost" displayName="option2" labelPosition="outside" showValueLabels="[2]">'
+                              	//bar color2
+                                    +'<fill>'
+                                     +'<SolidColor color="#00695c"/>'
+                                  +'</fill>'
+                                    +'<showDataEffect>'
+                                       +'<SeriesInterpolate/>'
+                                   +'</showDataEffect>'
+                              +'</Column2DSeries>'
+                          +'</series>'
+                      +'</Column2DSet>'
+                     	+'<Line2DSeries selectable="true" yField="roi" displayName="option3" radius="4.5" form="curve" itemRenderer="CircleItemRenderer">'
+                     			//line color1
+                                +'<stroke>'
+                                   +'<Stroke color="#fac55b" weight="3"/>'
+                               +'</stroke>'
+                              +'<lineStroke>'
+                                   +'<Stroke color="#fac55b" weight="3"/>'
+                               +'</lineStroke>'
+                              +'<verticalAxis>'
+                                 +'<LinearAxis id="vAxis2" formatter="{numFmt2}"/>'
+                                +'</verticalAxis>'
+                                +'<showDataEffect>'
+                                   +'<SeriesInterpolate/>'
+                               +'</showDataEffect>'
+                          +'</Line2DSeries>'
+                          +'<Line2DSeries selectable="true" yField="test" displayName="option4" radius="4.5" form="curve" itemRenderer="CircleItemRenderer">'
+                          		//line color2
+                                +'<stroke>'
+                                   +'<Stroke color="#ff5722" weight="3"/>'
+                               +'</stroke>'
+                              +'<lineStroke>'
+                                   +'<Stroke color="#ff5722" weight="3"/>'
+                               +'</lineStroke>'
+                              +'<verticalAxis>'
+                                 +'<LinearAxis id="vAxis2" formatter="{numFmt2}"/>'
+                                +'</verticalAxis>'
+                                +'<showDataEffect>'
+                                   +'<SeriesInterpolate/>'
+                               +'</showDataEffect>'
+                          +'</Line2DSeries>'
+                        +'</series>'
+                      +'<verticalAxisRenderers>'
+                            +'<Axis2DRenderer axis="{vAxis1}" showLine="false"/>'
+                         +'<Axis2DRenderer axis="{vAxis2}" showLine="false"/>'
+                     +'</verticalAxisRenderers>'
+                   +'</Combination2DChart>'
+              +'</rMateChart>';
+
+              // 차트 데이터
+				var chartData =
+				 [{"Month":"1","sales":2000, "cost":1300, "profit":700, "roi":20, "test":20},
+				 {"Month":"2","sales":3000, "cost":1800, "profit":1200, "roi":45, "test":30},
+				 {"Month":"3","sales":4200, "cost":2500, "profit":1700, "roi":83, "test":40},
+				 {"Month":"4","sales":5500, "cost":3500, "profit":2000, "roi":45, "test":45},
+				 {"Month":"5","sales":6200, "cost":4000, "profit":2200, "roi":20, "test":50},
+				 {"Month":"6","sales":7200, "cost":4500, "profit":2700, "roi":10, "test":60},
+				 {"Month":"7","sales":2000, "cost":1300, "profit":700, "roi":20, "test":20},
+				 {"Month":"8","sales":3000, "cost":1800, "profit":1200, "roi":45, "test":30},
+				 {"Month":"9","sales":4200, "cost":2500, "profit":1700, "roi":83, "test":40},
+				 {"Month":"10","sales":5500, "cost":3500, "profit":2000, "roi":45, "test":45},
+				 {"Month":"11","sales":6200, "cost":4000, "profit":2200, "roi":20, "test":50},
+				 {"Month":"12","sales":7200, "cost":4500, "profit":2700, "roi":10, "test":60}
+				 ];
+
+			rMateChartH5.calls("chart1", {
+			 "setLayout" : layoutStr,
+			    "setData" : chartData
+			});
+
+			/********* chart2 : 수출동향 *********/
+			rMateChartH5.create("chart2", "chartHolder2", "", "100%", "100%");
+
+			// 스트링 형식으로 레이아웃 정의.
+			var layoutStr2 =
+             '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                   +'<Options>'
+                      +'<Caption text=""/>'
+                        +'<Legend useVisibleCheck="true"/>'
+                   +'</Options>'
+                 +'<NumberFormatter id="numFmt1" useThousandsSeparator="true"/>'
+                   +'<CurrencyFormatter id="numFmt2" precision="0" currencySymbol="%" alignSymbol="right"/>'
+                 +'<Combination2DChart showDataTips="true" dataTipJsFunction="dataTipJsFunc">'
+                     +'<horizontalAxis>'
+                           +'<CategoryAxis categoryField="Month" padding="0.5"/>'
+                        +'</horizontalAxis>'
+                      +'<verticalAxis>'
+                         +'<LinearAxis id="vAxis1" formatter="{numFmt1}"/>'
+                        +'</verticalAxis>'
+                        +'<series>'
+                           +'<Column2DSet type="clustered">'
+                            +'<series>'
+                               +'<Column2DSeries yField="sales" displayName="option1" labelPosition="outside" showValueLabels="[2]">'
+                               	 //bar color1
+                                  +'<fill>'
+                                     +'<SolidColor color="#009688"/>'
+                                  +'</fill>'
+                                    +'<showDataEffect>'
+                                       +'<SeriesInterpolate/>'
+                                   +'</showDataEffect>'
+                              +'</Column2DSeries>'
+                              +'<Column2DSeries yField="cost" displayName="option2" labelPosition="outside" showValueLabels="[2]">'
+                              	//bar color2
+                                    +'<fill>'
+                                     +'<SolidColor color="#00695c"/>'
+                                  +'</fill>'
+                                    +'<showDataEffect>'
+                                       +'<SeriesInterpolate/>'
+                                   +'</showDataEffect>'
+                              +'</Column2DSeries>'
+                          +'</series>'
+                      +'</Column2DSet>'
+                     	+'<Line2DSeries selectable="true" yField="roi" displayName="option3" radius="4.5" form="curve" itemRenderer="CircleItemRenderer">'
+                     			//line color1
+                                +'<stroke>'
+                                   +'<Stroke color="#fac55b" weight="3"/>'
+                               +'</stroke>'
+                              +'<lineStroke>'
+                                   +'<Stroke color="#fac55b" weight="3"/>'
+                               +'</lineStroke>'
+                              +'<verticalAxis>'
+                                 +'<LinearAxis id="vAxis2" formatter="{numFmt2}"/>'
+                                +'</verticalAxis>'
+                                +'<showDataEffect>'
+                                   +'<SeriesInterpolate/>'
+                               +'</showDataEffect>'
+                          +'</Line2DSeries>'
+                          +'<Line2DSeries selectable="true" yField="test" displayName="option4" radius="4.5" form="curve" itemRenderer="CircleItemRenderer">'
+                          		//line color2
+                                +'<stroke>'
+                                   +'<Stroke color="#ff5722" weight="3"/>'
+                               +'</stroke>'
+                              +'<lineStroke>'
+                                   +'<Stroke color="#ff5722" weight="3"/>'
+                               +'</lineStroke>'
+                              +'<verticalAxis>'
+                                 +'<LinearAxis id="vAxis2" formatter="{numFmt2}"/>'
+                                +'</verticalAxis>'
+                                +'<showDataEffect>'
+                                   +'<SeriesInterpolate/>'
+                               +'</showDataEffect>'
+                          +'</Line2DSeries>'
+                        +'</series>'
+                      +'<verticalAxisRenderers>'
+                            +'<Axis2DRenderer axis="{vAxis1}" showLine="false"/>'
+                         +'<Axis2DRenderer axis="{vAxis2}" showLine="false"/>'
+                     +'</verticalAxisRenderers>'
+                   +'</Combination2DChart>'
+              +'</rMateChart>';
+
+              // 차트 데이터
+				var chartData2 =
+				 [{"Month":"1","sales":2000, "cost":1300, "profit":700, "roi":20, "test":20},
+				 {"Month":"2","sales":3000, "cost":1800, "profit":1200, "roi":45, "test":30},
+				 {"Month":"3","sales":4200, "cost":2500, "profit":1700, "roi":83, "test":40},
+				 {"Month":"4","sales":5500, "cost":3500, "profit":2000, "roi":45, "test":45},
+				 {"Month":"5","sales":6200, "cost":4000, "profit":2200, "roi":20, "test":50},
+				 {"Month":"6","sales":7200, "cost":4500, "profit":2700, "roi":10, "test":60},
+				 {"Month":"7","sales":2000, "cost":1300, "profit":700, "roi":20, "test":20},
+				 {"Month":"8","sales":3000, "cost":1800, "profit":1200, "roi":45, "test":30},
+				 {"Month":"9","sales":4200, "cost":2500, "profit":1700, "roi":83, "test":40},
+				 {"Month":"10","sales":5500, "cost":3500, "profit":2000, "roi":45, "test":45},
+				 {"Month":"11","sales":6200, "cost":4000, "profit":2200, "roi":20, "test":50},
+				 {"Month":"12","sales":7200, "cost":4500, "profit":2700, "roi":10, "test":60}
+				 ];
+
+			rMateChartH5.calls("chart2", {
+			 "setLayout" : layoutStr2,
+			    "setData" : chartData2
+			});
+
+			/********* chart3 : 품목물가동향 *********/
+			rMateChartH5.create("chart3", "chartHolder3", "", "100%", "100%");
+
+			// 스트링 형식으로 레이아웃 정의.
+			var layoutStr3 =
+			/* 
+			   20211111 차트 적용 요청
+			   styleName="chartStyle"
+			   axisTitleStyleName="chartAxisStyle"
+			   CSS 적용을 위해 모든 차트에 두가지 옵션 추가 부탁드립니다.			   
+			*/
+             '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                   +'<Options>'
+                      +'<Caption text=""/>'
+                        +'<Legend useVisibleCheck="true"/>'
+                   +'</Options>'
+                 +'<NumberFormatter id="numFmt1" useThousandsSeparator="true"/>'
+                   +'<CurrencyFormatter id="numFmt2" precision="0" currencySymbol="%" alignSymbol="right"/>'
+                 +'<Combination2DChart showDataTips="true" dataTipJsFunction="dataTipJsFunc">'
+                     +'<horizontalAxis>'
+                           +'<CategoryAxis categoryField="Month" padding="0.5"/>'
+                        +'</horizontalAxis>'
+                      +'<verticalAxis>'
+                         +'<LinearAxis id="vAxis1" formatter="{numFmt1}"/>'
+                        +'</verticalAxis>'
+                        +'<series>'
+                           +'<Column2DSet type="clustered">'
+                            +'<series>'
+                               +'<Column2DSeries yField="sales" displayName="option1" labelPosition="outside" showValueLabels="[2]">'
+                               	 //bar color1
+                                  +'<fill>'
+                                     +'<SolidColor color="#2b6fae"/>'
+                                  +'</fill>'
+                                    +'<showDataEffect>'
+                                       +'<SeriesInterpolate/>'
+                                   +'</showDataEffect>'
+                              +'</Column2DSeries>'
+                              +'<Column2DSeries yField="cost" displayName="option2" labelPosition="outside" showValueLabels="[2]">'
+                              	//bar color2
+                                    +'<fill>'
+                                     +'<SolidColor color="#191e80"/>'
+                                  +'</fill>'
+                                    +'<showDataEffect>'
+                                       +'<SeriesInterpolate/>'
+                                   +'</showDataEffect>'
+                              +'</Column2DSeries>'
+                          +'</series>'
+                      +'</Column2DSet>'
+                     	+'<Line2DSeries selectable="true" yField="roi" displayName="option3" radius="4.5" form="curve" itemRenderer="CircleItemRenderer">'
+                     			//line color1
+                                +'<stroke>'
+                                   +'<Stroke color="#fac55b" weight="3"/>'
+                               +'</stroke>'
+                              +'<lineStroke>'
+                                   +'<Stroke color="#fac55b" weight="3"/>'
+                               +'</lineStroke>'
+                              +'<verticalAxis>'
+                                 +'<LinearAxis id="vAxis2" formatter="{numFmt2}"/>'
+                                +'</verticalAxis>'
+                                +'<showDataEffect>'
+                                   +'<SeriesInterpolate/>'
+                               +'</showDataEffect>'
+                          +'</Line2DSeries>'
+                          +'<Line2DSeries selectable="true" yField="test" displayName="option4" radius="4.5" form="curve" itemRenderer="CircleItemRenderer">'
+                          		//line color2
+                                +'<stroke>'
+                                   +'<Stroke color="#ff5722" weight="3"/>'
+                               +'</stroke>'
+                              +'<lineStroke>'
+                                   +'<Stroke color="#ff5722" weight="3"/>'
+                               +'</lineStroke>'
+                              +'<verticalAxis>'
+                                 +'<LinearAxis id="vAxis2" formatter="{numFmt2}"/>'
+                                +'</verticalAxis>'
+                                +'<showDataEffect>'
+                                   +'<SeriesInterpolate/>'
+                               +'</showDataEffect>'
+                          +'</Line2DSeries>'
+                        +'</series>'
+                      +'<verticalAxisRenderers>'
+                            +'<Axis2DRenderer axis="{vAxis1}" showLine="false"/>'
+                         +'<Axis2DRenderer axis="{vAxis2}" showLine="false"/>'
+                     +'</verticalAxisRenderers>'
+                   +'</Combination2DChart>'
+              +'</rMateChart>';
+
+              // 차트 데이터
+				var chartData3 =
+				 [{"Month":"1","sales":2000, "cost":1300, "profit":700, "roi":20, "test":20},
+				 {"Month":"2","sales":3000, "cost":1800, "profit":1200, "roi":45, "test":30},
+				 {"Month":"3","sales":4200, "cost":2500, "profit":1700, "roi":83, "test":40},
+				 {"Month":"4","sales":5500, "cost":3500, "profit":2000, "roi":45, "test":45},
+				 {"Month":"5","sales":6200, "cost":4000, "profit":2200, "roi":20, "test":50},
+				 {"Month":"6","sales":7200, "cost":4500, "profit":2700, "roi":10, "test":60},
+				 {"Month":"7","sales":2000, "cost":1300, "profit":700, "roi":20, "test":20},
+				 {"Month":"8","sales":3000, "cost":1800, "profit":1200, "roi":45, "test":30},
+				 {"Month":"9","sales":4200, "cost":2500, "profit":1700, "roi":83, "test":40},
+				 {"Month":"10","sales":5500, "cost":3500, "profit":2000, "roi":45, "test":45},
+				 {"Month":"11","sales":6200, "cost":4000, "profit":2200, "roi":20, "test":50},
+				 {"Month":"12","sales":7200, "cost":4500, "profit":2700, "roi":10, "test":60}
+				 ];
+
+			rMateChartH5.calls("chart3", {
+			 "setLayout" : layoutStr3,
+			    "setData" : chartData3
+			});
+
+			/********* chart4 : 농산물 물가동향 *********/
+			rMateChartH5.create("chart4", "chartHolder4", "", "100%", "100%");
+
+			// 스트링 형식으로 레이아웃 정의.
+			var layoutStr4 =
+             '<rMateChart backgroundColor="#FFFFFF" borderStyle="none" styleName="chartStyle" axisTitleStyleName="chartAxisStyle">'
+                   +'<Options>'
+                      +'<Caption text=""/>'
+                        +'<Legend useVisibleCheck="true"/>'
+                   +'</Options>'
+                 +'<NumberFormatter id="numFmt1" useThousandsSeparator="true"/>'
+                   +'<CurrencyFormatter id="numFmt2" precision="0" currencySymbol="%" alignSymbol="right"/>'
+                 +'<Combination2DChart showDataTips="true" dataTipJsFunction="dataTipJsFunc">'
+                     +'<horizontalAxis>'
+                           +'<CategoryAxis categoryField="Month" padding="0.5"/>'
+                        +'</horizontalAxis>'
+                      +'<verticalAxis>'
+                         +'<LinearAxis id="vAxis1" formatter="{numFmt1}"/>'
+                        +'</verticalAxis>'
+                        +'<series>'
+                           +'<Column2DSet type="clustered">'
+                            +'<series>'
+                               +'<Column2DSeries yField="sales" displayName="option1" labelPosition="outside" showValueLabels="[2]">'
+                               	 //bar color1
+                                  +'<fill>'
+                                     +'<SolidColor color="#2b6fae"/>'
+                                  +'</fill>'
+                                    +'<showDataEffect>'
+                                       +'<SeriesInterpolate/>'
+                                   +'</showDataEffect>'
+                              +'</Column2DSeries>'
+                              +'<Column2DSeries yField="cost" displayName="option2" labelPosition="outside" showValueLabels="[2]">'
+                              	//bar color2
+                                    +'<fill>'
+                                     +'<SolidColor color="#191e80"/>'
+                                  +'</fill>'
+                                    +'<showDataEffect>'
+                                       +'<SeriesInterpolate/>'
+                                   +'</showDataEffect>'
+                              +'</Column2DSeries>'
+                          +'</series>'
+                      +'</Column2DSet>'
+                     	+'<Line2DSeries selectable="true" yField="roi" displayName="option3" radius="4.5" form="curve" itemRenderer="CircleItemRenderer">'
+                     			//line color1
+                                +'<stroke>'
+                                   +'<Stroke color="#fac55b" weight="3"/>'
+                               +'</stroke>'
+                              +'<lineStroke>'
+                                   +'<Stroke color="#fac55b" weight="3"/>'
+                               +'</lineStroke>'
+                              +'<verticalAxis>'
+                                 +'<LinearAxis id="vAxis2" formatter="{numFmt2}"/>'
+                                +'</verticalAxis>'
+                                +'<showDataEffect>'
+                                   +'<SeriesInterpolate/>'
+                               +'</showDataEffect>'
+                          +'</Line2DSeries>'
+                          +'<Line2DSeries selectable="true" yField="test" displayName="option4" radius="4.5" form="curve" itemRenderer="CircleItemRenderer">'
+                          		//line color2
+                                +'<stroke>'
+                                   +'<Stroke color="#ff5722" weight="3"/>'
+                               +'</stroke>'
+                              +'<lineStroke>'
+                                   +'<Stroke color="#ff5722" weight="3"/>'
+                               +'</lineStroke>'
+                              +'<verticalAxis>'
+                                 +'<LinearAxis id="vAxis2" formatter="{numFmt2}"/>'
+                                +'</verticalAxis>'
+                                +'<showDataEffect>'
+                                   +'<SeriesInterpolate/>'
+                               +'</showDataEffect>'
+                          +'</Line2DSeries>'
+                        +'</series>'
+                      +'<verticalAxisRenderers>'
+                            +'<Axis2DRenderer axis="{vAxis1}" showLine="false"/>'
+                         +'<Axis2DRenderer axis="{vAxis2}" showLine="false"/>'
+                     +'</verticalAxisRenderers>'
+                   +'</Combination2DChart>'
+              +'</rMateChart>';
+
+              // 차트 데이터
+				var chartData4 =
+				 [{"Month":"1","sales":2000, "cost":1300, "profit":700, "roi":20, "test":20},
+				 {"Month":"2","sales":3000, "cost":1800, "profit":1200, "roi":45, "test":30},
+				 {"Month":"3","sales":4200, "cost":2500, "profit":1700, "roi":83, "test":40},
+				 {"Month":"4","sales":5500, "cost":3500, "profit":2000, "roi":45, "test":45},
+				 {"Month":"5","sales":6200, "cost":4000, "profit":2200, "roi":20, "test":50},
+				 {"Month":"6","sales":7200, "cost":4500, "profit":2700, "roi":10, "test":60},
+				 {"Month":"7","sales":2000, "cost":1300, "profit":700, "roi":20, "test":20},
+				 {"Month":"8","sales":3000, "cost":1800, "profit":1200, "roi":45, "test":30},
+				 {"Month":"9","sales":4200, "cost":2500, "profit":1700, "roi":83, "test":40},
+				 {"Month":"10","sales":5500, "cost":3500, "profit":2000, "roi":45, "test":45},
+				 {"Month":"11","sales":6200, "cost":4000, "profit":2200, "roi":20, "test":50},
+				 {"Month":"12","sales":7200, "cost":4500, "profit":2700, "roi":10, "test":60}
+				 ];
+
+			rMateChartH5.calls("chart4", {
+			 "setLayout" : layoutStr4,
+			    "setData" : chartData4
+			});
+
+		rMateChartH5.registerTheme(rMateChartH5.themes);
+		
+		function rMateChartH5ChangeTheme(theme){
+		  document.getElementById("chart1").setTheme(theme);
+		  document.getElementById("chart2").setTheme(theme);
+		  document.getElementById("chart3").setTheme(theme);
+		  document.getElementById("chart4").setTheme(theme);
+		}
+
+		});
+    </script>
+</body>
+</html>
